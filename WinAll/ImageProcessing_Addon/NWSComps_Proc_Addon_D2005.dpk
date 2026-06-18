@@ -1,0 +1,46 @@
+package NWSComps_Proc_Addon_D2005;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'NWSComps_Proc_Addon'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  NWSComps_RGBCurves_d2005,
+  NWSComps_Shared_D2005;
+
+contains
+  NWSComps_Proc in 'NWSComps_Proc.pas',
+  NWSComps_Proc_Filter_Lib in 'NWSComps_Proc_Filter_Lib.pas',
+  NWSComps_Proc_Filter_Lib_Const in 'NWSComps_Proc_Filter_Lib_Const.pas',
+  NWSComps_Proc_Filter_Types in 'NWSComps_Proc_Filter_Types.pas',
+  NWSComps_Proc_Reg in 'NWSComps_Proc_Reg.pas',
+  NWSComps_Proc_Engine in 'NWSComps_Proc_Engine.pas',
+  NWSComps_MultiThreadProc in 'NWSComps_MultiThreadProc.pas',
+  NWSComps_FiltersPanel in 'NWSComps_FiltersPanel.pas';
+
+end.

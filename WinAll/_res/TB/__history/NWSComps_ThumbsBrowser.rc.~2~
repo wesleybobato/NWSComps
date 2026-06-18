@@ -1,0 +1,11 @@
+// Name                 Type	Filename
+CHECK_NO                RCDATA    "CHECK_NO.bmp"
+CHECK_YES               RCDATA    "CHECK_YES.bmp"
+INFO_BOX                RCDATA    "INFO_BOX.bmp"
+FOLDER_UP               RCDATA    "FOLDER_UP.png"
+ROTATE_LEFT_OFF         RCDATA    "ROTATE_LEFT_OFF.bmp"
+ROTATE_LEFT_ON          RCDATA    "ROTATE_LEFT_ON.bmp"
+ROTATE_RIGHT_OFF        RCDATA    "ROTATE_RIGHT_OFF.bmp"
+ROTATE_RIGHT_ON         RCDATA    "ROTATE_RIGHT_ON.bmp"
+RATING_STAR             RCDATA    "star_sm.png"
+RATING_STAR_EMPTY       RCDATA    "star_empty_sm.png"
