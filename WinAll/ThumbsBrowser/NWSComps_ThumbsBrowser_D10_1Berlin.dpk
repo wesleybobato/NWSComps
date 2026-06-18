@@ -1,0 +1,62 @@
+package NWSComps_ThumbsBrowser_D10_1Berlin;
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'NWSComps_ThumbsBrowser'}
+{$IMPLICITBUILD ON}
+
+requires
+  vclx,
+  vcl,
+  rtl,
+  dbrtl,
+  NWSComps_Shared_D10_1Berlin,
+  PKIECtrl24;
+
+contains
+  NWSComps_ThumbsBrowser in 'NWSComps_ThumbsBrowser.pas',
+  NWSComps_ThumbsBrowser_Const in 'NWSComps_ThumbsBrowser_Const.pas',
+  NWSComps_Thumbsbrowser_Defs in 'NWSComps_Thumbsbrowser_Defs.pas',
+  NWSComps_Thumbsbrowser_Info in 'NWSComps_Thumbsbrowser_Info.pas' {Thumbsbrowser_InfoForm},
+  NWSComps_ThumbsBrowser_LoadPicThread in 'NWSComps_ThumbsBrowser_LoadPicThread.pas',
+  NWSComps_ThumbsBrowser_NodeManager in 'NWSComps_ThumbsBrowser_NodeManager.pas',
+  NWSComps_ThumbsBrowser_Print in 'NWSComps_ThumbsBrowser_Print.pas',
+  NWSComps_ThumbsBrowser_Reg in 'NWSComps_ThumbsBrowser_Reg.pas',
+  NWSComps_ThumbsBrowser_Shell in 'NWSComps_ThumbsBrowser_Shell.pas',
+  NWSComps_ThumbsBrowser_Shell_Utils in 'NWSComps_ThumbsBrowser_Shell_Utils.pas',
+  NWSComps_ThumbsBrowser_Thumbs in 'NWSComps_ThumbsBrowser_Thumbs.pas',
+  NWSComps_Thumbsbrowser_Utils in 'NWSComps_Thumbsbrowser_Utils.pas',
+  NWSComps_ThumbsBrowser_Utils_Const in 'NWSComps_ThumbsBrowser_Utils_Const.pas',
+  NWSComps_ThumbsBrowser_Utils_Types in 'NWSComps_ThumbsBrowser_Utils_Types.pas',
+  NWSComps_ThumbsBrowser_ScanFilesThread in 'NWSComps_ThumbsBrowser_ScanFilesThread.pas',
+  NWSComps_ThumbsBrowser_Database_Utils in 'NWSComps_ThumbsBrowser_Database_Utils.pas',
+  NWSComps_WIA in 'NWSComps_WIA.pas',
+  NWSComps_ThumbsBrowser_Sorting_Utils in 'NWSComps_ThumbsBrowser_Sorting_Utils.pas',
+  NWSComps_ThumbsBrowser_MetaHelpers in 'NWSComps_ThumbsBrowser_MetaHelpers.pas',
+  NWSComps_ThumbsBrowser_RES in 'NWSComps_ThumbsBrowser_RES.pas',
+  NWSComps_ThumbsBrowser_RES_EN in 'NWSComps_ThumbsBrowser_RES_EN.pas',
+  NWSComps_ThumbsBrowser_RES_CONST in 'NWSComps_ThumbsBrowser_RES_CONST.pas';
+
+end.
