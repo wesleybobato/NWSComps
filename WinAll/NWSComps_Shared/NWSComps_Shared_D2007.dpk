@@ -1,0 +1,42 @@
+package NWSComps_Shared_D2007;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'NWSComps_Shared'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  PKIECtrl11;
+
+contains
+  NWSComps_DataParser in 'NWSComps_DataParser.pas',
+  NWSComps_GdiPlus in 'NWSComps_GdiPlus.pas',
+  NWSComps_IEUtils_Previews in 'NWSComps_IEUtils_Previews.pas',
+  NWSComps_StyleEngine in 'NWSComps_StyleEngine.pas',
+  NWSComps_Types in 'NWSComps_Types.pas';
+end.

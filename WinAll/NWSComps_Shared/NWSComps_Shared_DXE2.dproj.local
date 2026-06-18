@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/08/08 16:16:10.000.071,=D:\DXE2_Data\Shared_Comps\NWSComps\WinAll\NWSComps_Shared\Unit2.pas</Transaction>
+    <Transaction>2016/08/08 16:16:27.000.309,D:\DXE2_Data\Shared_Comps\NWSComps\WinAll\NWSComps_Shared\NWSComps_IEProc_Defs.pas=D:\DXE2_Data\Shared_Comps\NWSComps\WinAll\NWSComps_Shared\Unit2.pas</Transaction>
+    <Transaction>2016/08/08 16:24:33.000.127,D:\DXE2_Data\Shared_Comps\NWSComps\WinAll\NWSComps_Shared\NWSComps_IEProc_Defs.pas=</Transaction>
+    <Transaction>2016/08/08 16:28:30.000.416,=D:\DXE2_Data\Shared_Comps\NWSComps\WinAll\NWSComps_Shared\NWSComps_IEUtils_Previews.pas</Transaction>
+  </Transactions>
+</BorlandProject>

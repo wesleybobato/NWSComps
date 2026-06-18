@@ -1,0 +1,20 @@
+unit NWSComps_MultiPicFormat_Const;
+
+interface
+
+const
+
+    MULTIPICFORMAT_CONST_CLASSSIGNATURE = 'TMultiPicsFormatHandler';
+    MULTIPICFORMAT_CONST_CLASSVERSION_MAJOR = 1;
+    MULTIPICFORMAT_CONST_CLASSVERSION_MINOR = 0; 
+    
+
+
+    MULTIPICFORMAT_CONST_SIGNATURE_GENERAL = 'NWSComps Multi Pictures Format';
+    MULTIPICFORMAT_CONST_VERSION_MAJ = 1;
+    MULTIPICFORMAT_CONST_VERSION_MIN = 0;
+
+implementation
+
+end.
+ 
