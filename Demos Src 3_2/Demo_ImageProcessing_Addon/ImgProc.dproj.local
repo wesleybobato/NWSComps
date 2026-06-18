@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/09/01 09:51:23.000.284,=C:\Users\nwsco\Documents\DXE2_Data\comps\NWSComps\Demo Src 3_1\Demo Src\Demo_ImageProcessing_Addon\Unit2.pas</Transaction>
+    <Transaction>2018/09/01 11:31:38.000.224,C:\Users\nwsco\Documents\DXE2_Data\comps\NWSComps\Demo Src 3_1\Demo Src\Demo_ImageProcessing_Addon\Unit2.pas=C:\Users\nwsco\Documents\DXE2_Data\comps\NWSComps\Demo Src 3_1\Demo Src\Demo_ImageProcessing_Addon\FiltersPanel.pas</Transaction>
+    <Transaction>2018/09/03 13:58:14.000.695,C:\Users\nwsco\Documents\DXE2_Data\comps\NWSComps\WinAll\ImageProcessing_Addon\NWSComps_FiltersPanel.pas=C:\Users\nwsco\Documents\DXE2_Data\comps\NWSComps\Demo Src 3_1\Demo Src\Demo_ImageProcessing_Addon\FiltersPanel.pas</Transaction>
+    <Transaction>2018/09/04 17:48:37.000.084,C:\Users\nwsco\Documents\DXE2_Projects\ImgProc\ImgProc.dproj=C:\Users\nwsco\Documents\DXE2_Projects\ImgProc\Demo_IEProc.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

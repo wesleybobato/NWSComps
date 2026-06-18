@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/05/04 16:38:03.000.131,=C:\Users\francesco\Documents\RAD Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>2016/05/04 16:40:18.000.128,D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo_PaintEngine_Basic\frmPE_BasicEditor.pas=C:\Users\francesco\Documents\RAD Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>2016/05/04 16:40:18.000.128,D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo_PaintEngine_Basic\frmPE_BasicEditor.dfm=C:\Users\francesco\Documents\RAD Studio\Projects\Unit6.dfm</Transaction>
+    <Transaction>2016/05/04 16:40:56.000.004,D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo_PaintEngine_Basic\PE_BasicProj.dproj=C:\Users\francesco\Documents\RAD Studio\Projects\Project6.dproj</Transaction>
+    <Transaction>2016/09/12 14:52:27.000.047,D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo_PaintEngine_Basic\Demo_PE_Basic.dproj=D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo_PaintEngine_Basic\PE_BasicProj.dproj</Transaction>
+    <Transaction>2016/11/28 15:40:30.000.453,D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo_RemoveBackground\Demo_PE_Basic.dproj=D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo_RemoveBackground\Demo_RemoveBg.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

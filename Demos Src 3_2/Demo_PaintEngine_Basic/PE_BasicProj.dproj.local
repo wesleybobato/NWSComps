@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/05/04 16:38:03.000.131,=C:\Users\francesco\Documents\RAD Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>2016/05/04 16:40:18.000.128,D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo_PaintEngine_Basic\frmPE_BasicEditor.pas=C:\Users\francesco\Documents\RAD Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>2016/05/04 16:40:18.000.128,D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo_PaintEngine_Basic\frmPE_BasicEditor.dfm=C:\Users\francesco\Documents\RAD Studio\Projects\Unit6.dfm</Transaction>
+    <Transaction>2016/05/04 16:40:56.000.004,D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo_PaintEngine_Basic\PE_BasicProj.dproj=C:\Users\francesco\Documents\RAD Studio\Projects\Project6.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
