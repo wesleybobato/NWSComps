@@ -1,0 +1,45 @@
+package NWSComps_RGBCurves_dxe7;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'NWSComps_RGBCurves'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  vclx,
+  PKIECtrl21,
+  NWSComps_Shared_DXE7;
+
+contains
+  NWSComps_RGBCurves in 'NWSComps_RGBCurves.pas',
+  NWSComps_RGBCurves_Math in 'NWSComps_RGBCurves_Math.pas',
+  NWSComps_RGBCurves_Reg in 'NWSComps_RGBCurves_Reg.pas',
+  NWSComps_RGBCurves_Types in 'NWSComps_RGBCurves_Types.pas',
+  NWSComps_RGBCurves_Const in 'NWSComps_RGBCurves_Const.pas';
+
+end.
