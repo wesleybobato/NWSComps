@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BorlandProject>
-	<Transactions>
-    <Transaction>2016/12/20 19:26:37.000.273,=C:\Users\francesco\Documents\RAD Studio\Projects\Unit11.pas</Transaction>
-    <Transaction>2016/12/20 19:27:13.000.507,C:\Users\francesco\Documents\RAD Studio\Projects\Unit11.pas=D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo_TB_AllSources\Unit1.pas</Transaction>
-    <Transaction>2016/12/20 19:27:13.000.507,C:\Users\francesco\Documents\RAD Studio\Projects\Unit11.dfm=D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo_TB_AllSources\Unit1.dfm</Transaction>
-    <Transaction>2016/12/20 19:27:26.000.982,C:\Users\francesco\Documents\RAD Studio\Projects\Project11.dproj=D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo_TB_AllSources\Demo_TB_AllSources.dproj</Transaction>
-  </Transactions>
-</BorlandProject>

@@ -1,1 +1,0 @@
-{$DEFINE VCLSTYLES}  //must be defined to support VCL Themes (only for DXE2 upper)
