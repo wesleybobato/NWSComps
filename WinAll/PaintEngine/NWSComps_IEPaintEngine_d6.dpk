@@ -1,0 +1,40 @@
+package NWSComps_IEPaintEngine_d6;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'NWSComps_IEPaintEngine'}
+{$IMPLICITBUILD ON}
+
+contains
+  NWSComps_IEPaintengine_Manager in 'NWSComps_IEPaintengine_Manager.pas',
+  NWSComps_IEPaintEngine_Const in 'NWSComps_IEPaintEngine_Const.pas',
+  NWSComps_IEPaintEngine_Color in 'NWSComps_IEPaintEngine_Color.pas',
+  NWSComps_IEPaintengine in 'NWSComps_IEPaintengine.pas',
+  NWSComps_IEPaintEngine_Utils in 'NWSComps_IEPaintEngine_Utils.pas',
+  NWSComps_IEPaintengine_Types in 'NWSComps_IEPaintengine_Types.pas',
+  NWSComps_IEPaintEngine_Reg in 'NWSComps_IEPaintEngine_Reg.pas';
+
+end.

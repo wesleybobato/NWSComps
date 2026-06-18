@@ -1,0 +1,48 @@
+package NWSComps_IEPaintEngine_dxe3;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'NWSComps_IEPaintEngine'}
+{$IMPLICITBUILD ON}
+
+requires
+  vclx,
+  vcl,
+  rtl,
+  PKIECtrl17,
+  JH_WinTab_DXE3,
+  NWSComps_Shared_DXE3;
+
+contains
+  NWSComps_IEPaintengine_Manager,
+  NWSComps_IEPaintEngine_Const,
+  NWSComps_IEPaintEngine_Color,
+  NWSComps_IEPaintengine,
+  NWSComps_IEPaintEngine_Utils,
+  NWSComps_IEPaintengine_Types,
+  NWSComps_IEPaintEngine_Reg;
+
+end.
