@@ -1,0 +1,96 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{C1521F9B-1D93-4F5C-8694-AB10057911EA}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="Jahn_Tablet\JH_WinTab_dxe2.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="NWSComps_Shared\NWSComps_Shared_DXE2.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="RGBCurves\NWSComps_RGBCurves_dxe2.dproj">
+				<Dependencies>NWSComps_Shared\NWSComps_Shared_DXE2.dproj</Dependencies>
+			</Projects>
+			<Projects Include="ImageProcessing_Addon\NWSComps_Proc_Addon_DXE2.dproj">
+				<Dependencies>NWSComps_Shared\NWSComps_Shared_DXE2.dproj;RGBCurves\NWSComps_RGBCurves_dxe2.dproj</Dependencies>
+			</Projects>
+			<Projects Include="PaintEngine\NWSComps_IEPaintEngine_dxe2.dproj">
+				<Dependencies>Jahn_Tablet\JH_WinTab_dxe2.dproj;NWSComps_Shared\NWSComps_Shared_DXE2.dproj</Dependencies>
+			</Projects>
+			<Projects Include="ThumbsBrowser\NWSComps_ThumbsBrowser_DXE2.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="JH_WinTab_dxe2">
+			<MSBuild Projects="Jahn_Tablet\JH_WinTab_dxe2.dproj"/>
+		</Target>
+		<Target Name="JH_WinTab_dxe2:Clean">
+			<MSBuild Projects="Jahn_Tablet\JH_WinTab_dxe2.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="JH_WinTab_dxe2:Make">
+			<MSBuild Projects="Jahn_Tablet\JH_WinTab_dxe2.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="NWSComps_Shared_DXE2">
+			<MSBuild Projects="NWSComps_Shared\NWSComps_Shared_DXE2.dproj"/>
+		</Target>
+		<Target Name="NWSComps_Shared_DXE2:Clean">
+			<MSBuild Projects="NWSComps_Shared\NWSComps_Shared_DXE2.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NWSComps_Shared_DXE2:Make">
+			<MSBuild Projects="NWSComps_Shared\NWSComps_Shared_DXE2.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="NWSComps_RGBCurves_dxe2" DependsOnTargets="NWSComps_Shared_DXE2">
+			<MSBuild Projects="RGBCurves\NWSComps_RGBCurves_dxe2.dproj"/>
+		</Target>
+		<Target Name="NWSComps_RGBCurves_dxe2:Clean" DependsOnTargets="NWSComps_Shared_DXE2:Clean">
+			<MSBuild Projects="RGBCurves\NWSComps_RGBCurves_dxe2.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NWSComps_RGBCurves_dxe2:Make" DependsOnTargets="NWSComps_Shared_DXE2:Make">
+			<MSBuild Projects="RGBCurves\NWSComps_RGBCurves_dxe2.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="NWSComps_Proc_Addon_DXE2" DependsOnTargets="NWSComps_Shared_DXE2;NWSComps_RGBCurves_dxe2">
+			<MSBuild Projects="ImageProcessing_Addon\NWSComps_Proc_Addon_DXE2.dproj"/>
+		</Target>
+		<Target Name="NWSComps_Proc_Addon_DXE2:Clean" DependsOnTargets="NWSComps_Shared_DXE2:Clean;NWSComps_RGBCurves_dxe2:Clean">
+			<MSBuild Projects="ImageProcessing_Addon\NWSComps_Proc_Addon_DXE2.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NWSComps_Proc_Addon_DXE2:Make" DependsOnTargets="NWSComps_Shared_DXE2:Make;NWSComps_RGBCurves_dxe2:Make">
+			<MSBuild Projects="ImageProcessing_Addon\NWSComps_Proc_Addon_DXE2.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="NWSComps_IEPaintEngine_dxe2" DependsOnTargets="JH_WinTab_dxe2;NWSComps_Shared_DXE2">
+			<MSBuild Projects="PaintEngine\NWSComps_IEPaintEngine_dxe2.dproj"/>
+		</Target>
+		<Target Name="NWSComps_IEPaintEngine_dxe2:Clean" DependsOnTargets="JH_WinTab_dxe2:Clean;NWSComps_Shared_DXE2:Clean">
+			<MSBuild Projects="PaintEngine\NWSComps_IEPaintEngine_dxe2.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NWSComps_IEPaintEngine_dxe2:Make" DependsOnTargets="JH_WinTab_dxe2:Make;NWSComps_Shared_DXE2:Make">
+			<MSBuild Projects="PaintEngine\NWSComps_IEPaintEngine_dxe2.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="NWSComps_ThumbsBrowser_DXE2">
+			<MSBuild Projects="ThumbsBrowser\NWSComps_ThumbsBrowser_DXE2.dproj"/>
+		</Target>
+		<Target Name="NWSComps_ThumbsBrowser_DXE2:Clean">
+			<MSBuild Projects="ThumbsBrowser\NWSComps_ThumbsBrowser_DXE2.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NWSComps_ThumbsBrowser_DXE2:Make">
+			<MSBuild Projects="ThumbsBrowser\NWSComps_ThumbsBrowser_DXE2.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="JH_WinTab_dxe2;NWSComps_Shared_DXE2;NWSComps_RGBCurves_dxe2;NWSComps_Proc_Addon_DXE2;NWSComps_IEPaintEngine_dxe2;NWSComps_ThumbsBrowser_DXE2"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="JH_WinTab_dxe2:Clean;NWSComps_Shared_DXE2:Clean;NWSComps_RGBCurves_dxe2:Clean;NWSComps_Proc_Addon_DXE2:Clean;NWSComps_IEPaintEngine_dxe2:Clean;NWSComps_ThumbsBrowser_DXE2:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="JH_WinTab_dxe2:Make;NWSComps_Shared_DXE2:Make;NWSComps_RGBCurves_dxe2:Make;NWSComps_Proc_Addon_DXE2:Make;NWSComps_IEPaintEngine_dxe2:Make;NWSComps_ThumbsBrowser_DXE2:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

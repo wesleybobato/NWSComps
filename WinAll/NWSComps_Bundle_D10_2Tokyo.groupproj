@@ -1,0 +1,96 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{17F6A808-17D2-4EEF-8490-2E7E7D655EA7}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="Jahn_Tablet\JH_WinTab_d10_2Tokyo.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="NWSComps_Shared\NWSComps_Shared_D10_2Tokyo.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="RGBCurves\NWSComps_RGBCurves_d10_2Tokyo.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="ImageProcessing_Addon\NWSComps_Proc_Addon_D10_2Tokyo.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="PaintEngine\NWSComps_IEPaintEngine_d10_2Tokyo.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="ThumbsBrowser\NWSComps_ThumbsBrowser_D10_2Tokyo.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="JH_WinTab_d10_2Tokyo">
+			<MSBuild Projects="Jahn_Tablet\JH_WinTab_d10_2Tokyo.dproj"/>
+		</Target>
+		<Target Name="JH_WinTab_d10_2Tokyo:Clean">
+			<MSBuild Projects="Jahn_Tablet\JH_WinTab_d10_2Tokyo.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="JH_WinTab_d10_2Tokyo:Make">
+			<MSBuild Projects="Jahn_Tablet\JH_WinTab_d10_2Tokyo.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="NWSComps_Shared_D10_2Tokyo">
+			<MSBuild Projects="NWSComps_Shared\NWSComps_Shared_D10_2Tokyo.dproj"/>
+		</Target>
+		<Target Name="NWSComps_Shared_D10_2Tokyo:Clean">
+			<MSBuild Projects="NWSComps_Shared\NWSComps_Shared_D10_2Tokyo.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NWSComps_Shared_D10_2Tokyo:Make">
+			<MSBuild Projects="NWSComps_Shared\NWSComps_Shared_D10_2Tokyo.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="NWSComps_RGBCurves_d10_2Tokyo">
+			<MSBuild Projects="RGBCurves\NWSComps_RGBCurves_d10_2Tokyo.dproj"/>
+		</Target>
+		<Target Name="NWSComps_RGBCurves_d10_2Tokyo:Clean">
+			<MSBuild Projects="RGBCurves\NWSComps_RGBCurves_d10_2Tokyo.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NWSComps_RGBCurves_d10_2Tokyo:Make">
+			<MSBuild Projects="RGBCurves\NWSComps_RGBCurves_d10_2Tokyo.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="NWSComps_Proc_Addon_D10_2Tokyo">
+			<MSBuild Projects="ImageProcessing_Addon\NWSComps_Proc_Addon_D10_2Tokyo.dproj"/>
+		</Target>
+		<Target Name="NWSComps_Proc_Addon_D10_2Tokyo:Clean">
+			<MSBuild Projects="ImageProcessing_Addon\NWSComps_Proc_Addon_D10_2Tokyo.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NWSComps_Proc_Addon_D10_2Tokyo:Make">
+			<MSBuild Projects="ImageProcessing_Addon\NWSComps_Proc_Addon_D10_2Tokyo.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="NWSComps_IEPaintEngine_d10_2Tokyo">
+			<MSBuild Projects="PaintEngine\NWSComps_IEPaintEngine_d10_2Tokyo.dproj"/>
+		</Target>
+		<Target Name="NWSComps_IEPaintEngine_d10_2Tokyo:Clean">
+			<MSBuild Projects="PaintEngine\NWSComps_IEPaintEngine_d10_2Tokyo.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NWSComps_IEPaintEngine_d10_2Tokyo:Make">
+			<MSBuild Projects="PaintEngine\NWSComps_IEPaintEngine_d10_2Tokyo.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="NWSComps_ThumbsBrowser_D10_2Tokyo">
+			<MSBuild Projects="ThumbsBrowser\NWSComps_ThumbsBrowser_D10_2Tokyo.dproj"/>
+		</Target>
+		<Target Name="NWSComps_ThumbsBrowser_D10_2Tokyo:Clean">
+			<MSBuild Projects="ThumbsBrowser\NWSComps_ThumbsBrowser_D10_2Tokyo.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NWSComps_ThumbsBrowser_D10_2Tokyo:Make">
+			<MSBuild Projects="ThumbsBrowser\NWSComps_ThumbsBrowser_D10_2Tokyo.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="JH_WinTab_d10_2Tokyo;NWSComps_Shared_D10_2Tokyo;NWSComps_RGBCurves_d10_2Tokyo;NWSComps_Proc_Addon_D10_2Tokyo;NWSComps_IEPaintEngine_d10_2Tokyo;NWSComps_ThumbsBrowser_D10_2Tokyo"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="JH_WinTab_d10_2Tokyo:Clean;NWSComps_Shared_D10_2Tokyo:Clean;NWSComps_RGBCurves_d10_2Tokyo:Clean;NWSComps_Proc_Addon_D10_2Tokyo:Clean;NWSComps_IEPaintEngine_d10_2Tokyo:Clean;NWSComps_ThumbsBrowser_D10_2Tokyo:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="JH_WinTab_d10_2Tokyo:Make;NWSComps_Shared_D10_2Tokyo:Make;NWSComps_RGBCurves_d10_2Tokyo:Make;NWSComps_Proc_Addon_D10_2Tokyo:Make;NWSComps_IEPaintEngine_d10_2Tokyo:Make;NWSComps_ThumbsBrowser_D10_2Tokyo:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

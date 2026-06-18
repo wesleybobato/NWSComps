@@ -1,0 +1,96 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{17F6A808-17D2-4EEF-8490-2E7E7D655EA7}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="Jahn_Tablet\JH_WinTab_d10Seattle.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="NWSComps_Shared\NWSComps_Shared_d10Seattle.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="RGBCurves\NWSComps_RGBCurves_d10Seattle.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="ImageProcessing_Addon\NWSComps_Proc_Addon_d10Seattle.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="PaintEngine\NWSComps_IEPaintEngine_d10Seattle.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="ThumbsBrowser\NWSComps_ThumbsBrowser_d10Seattle.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="JH_WinTab_d10Seattle">
+			<MSBuild Projects="Jahn_Tablet\JH_WinTab_d10Seattle.dproj"/>
+		</Target>
+		<Target Name="JH_WinTab_d10Seattle:Clean">
+			<MSBuild Projects="Jahn_Tablet\JH_WinTab_d10Seattle.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="JH_WinTab_d10Seattle:Make">
+			<MSBuild Projects="Jahn_Tablet\JH_WinTab_d10Seattle.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="NWSComps_Shared_d10Seattle">
+			<MSBuild Projects="NWSComps_Shared\NWSComps_Shared_d10Seattle.dproj"/>
+		</Target>
+		<Target Name="NWSComps_Shared_d10Seattle:Clean">
+			<MSBuild Projects="NWSComps_Shared\NWSComps_Shared_d10Seattle.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NWSComps_Shared_d10Seattle:Make">
+			<MSBuild Projects="NWSComps_Shared\NWSComps_Shared_d10Seattle.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="NWSComps_RGBCurves_d10Seattle">
+			<MSBuild Projects="RGBCurves\NWSComps_RGBCurves_d10Seattle.dproj"/>
+		</Target>
+		<Target Name="NWSComps_RGBCurves_d10Seattle:Clean">
+			<MSBuild Projects="RGBCurves\NWSComps_RGBCurves_d10Seattle.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NWSComps_RGBCurves_d10Seattle:Make">
+			<MSBuild Projects="RGBCurves\NWSComps_RGBCurves_d10Seattle.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="NWSComps_Proc_Addon_d10Seattle">
+			<MSBuild Projects="ImageProcessing_Addon\NWSComps_Proc_Addon_d10Seattle.dproj"/>
+		</Target>
+		<Target Name="NWSComps_Proc_Addon_d10Seattle:Clean">
+			<MSBuild Projects="ImageProcessing_Addon\NWSComps_Proc_Addon_d10Seattle.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NWSComps_Proc_Addon_d10Seattle:Make">
+			<MSBuild Projects="ImageProcessing_Addon\NWSComps_Proc_Addon_d10Seattle.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="NWSComps_IEPaintEngine_d10Seattle">
+			<MSBuild Projects="PaintEngine\NWSComps_IEPaintEngine_d10Seattle.dproj"/>
+		</Target>
+		<Target Name="NWSComps_IEPaintEngine_d10Seattle:Clean">
+			<MSBuild Projects="PaintEngine\NWSComps_IEPaintEngine_d10Seattle.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NWSComps_IEPaintEngine_d10Seattle:Make">
+			<MSBuild Projects="PaintEngine\NWSComps_IEPaintEngine_d10Seattle.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="NWSComps_ThumbsBrowser_d10Seattle">
+			<MSBuild Projects="ThumbsBrowser\NWSComps_ThumbsBrowser_d10Seattle.dproj"/>
+		</Target>
+		<Target Name="NWSComps_ThumbsBrowser_d10Seattle:Clean">
+			<MSBuild Projects="ThumbsBrowser\NWSComps_ThumbsBrowser_d10Seattle.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="NWSComps_ThumbsBrowser_d10Seattle:Make">
+			<MSBuild Projects="ThumbsBrowser\NWSComps_ThumbsBrowser_d10Seattle.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="JH_WinTab_d10Seattle;NWSComps_Shared_d10Seattle;NWSComps_RGBCurves_d10Seattle;NWSComps_Proc_Addon_d10Seattle;NWSComps_IEPaintEngine_d10Seattle;NWSComps_ThumbsBrowser_d10Seattle"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="JH_WinTab_d10Seattle:Clean;NWSComps_Shared_d10Seattle:Clean;NWSComps_RGBCurves_d10Seattle:Clean;NWSComps_Proc_Addon_d10Seattle:Clean;NWSComps_IEPaintEngine_d10Seattle:Clean;NWSComps_ThumbsBrowser_d10Seattle:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="JH_WinTab_d10Seattle:Make;NWSComps_Shared_d10Seattle:Make;NWSComps_RGBCurves_d10Seattle:Make;NWSComps_Proc_Addon_d10Seattle:Make;NWSComps_IEPaintEngine_d10Seattle:Make;NWSComps_ThumbsBrowser_d10Seattle:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>
