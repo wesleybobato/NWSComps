@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/08/29 15:41:07.000.354,=C:\Users\francesco\Documents\RAD Studio\Projects\Unit8.pas</Transaction>
+    <Transaction>2016/08/31 12:59:41.000.484,=C:\Users\francesco\Documents\RAD Studio\Projects\Unit8.pas</Transaction>
+    <Transaction>2016/08/31 13:01:24.000.125,=D:\DXE2_Data\Shared_Comps\NWSComps\WinAll\MultiThreadProc\NWSComps_MultiThreadProc.pas</Transaction>
+    <Transaction>2016/08/31 13:01:44.000.646,C:\Users\francesco\Documents\RAD Studio\Projects\Project8.dproj=C:\Users\francesco\Documents\RAD Studio\Projects\Project8.dproj</Transaction>
+    <Transaction>2016/09/03 17:10:41.000.326,D:\DXE2_Data\Shared_Comps\NWSComps\WinAll\MultiThreadProc\NWSComps_MultiThreadProc.pas=</Transaction>
+    <Transaction>2016/09/14 13:06:23.000.665,C:\Users\francesco\Documents\RAD Studio\Projects\Project8.dproj=D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo MultiThread Process\DemoMtProc.dproj</Transaction>
+    <Transaction>2016/09/14 13:07:30.000.035,C:\Users\francesco\Documents\RAD Studio\Projects\Unit8.pas=D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo MultiThread Process\frmMain.pas</Transaction>
+    <Transaction>2016/09/14 13:07:30.000.035,C:\Users\francesco\Documents\RAD Studio\Projects\Unit8.dfm=D:\DXE2_Data\Shared_Comps\NWSComps\_Demo\Demo MultiThread Process\frmMain.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
